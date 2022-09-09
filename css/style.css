@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 75%;
+}
+
+a link {
+	color: black;
+}
+
+/* @font-face {
+	font-family: 'AnotherDay';
+	src: url('../assets/font/AnotherDay.ttf');
+}
+
+@font-face {
+	font-family: 'Amstagram';
+	src: url('../assets/font/Amstagram.ttf');
+} */
+
+/* a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: white;
+	font-weight: 400;
+
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+nav ul {
+	display: flex;
+} */
+
+/* .rowFlex {
+	display: flex;
+	propiedad que permite aplicar flexbox sobre contenedor padre
+flex-direction: row;
+/*elegimos orientación sobre eje X o Y -*/
+/* flex-wrap: nowrap;
+/* obligamos o no (a los items hijos), a adaptarse al ancho del contendor padre */
+/* max-width: 1200px;
+} */
+.navFlex {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-end;
+	/*organizar los elementos:  center, flex-start, flex-end, space-around, space-between, spave-evenly */
+}
+
+
+.navFlex li {
+	list-style-type: none;
+	padding: 0px;
+	font-size: 25px;
+	background-color: rgb(0, 0, 0);
+}
+
+.navFlex li a {
+	text-decoration: none;
+}
+
+/* .navFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+} */
+
+/* .navFlex__item1 {
+	order: 5;
+}
+
+.navFlex__item2 {
+	order: -1;
+}
+
+.navFlex__item3 {
+	order: -2;
+}
+
+.navFlex__item4 {
+	order: 0;
+}
+  */
+
+
+
+.gridContainer {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"encabezado encabezado"
+		"encabezado encabezado"
+		"footer footer";
+	grid-template-columns: repeat(4, 1 fr);
+	grid-template-rows: repeat(4, 1 fr);
+	background-color: rgb(53, 53, 53);
+}
+
+header {
+	grid-area: header;
+	display: flex;
+}
+
+header img {
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	padding: 10px;
+	font-size: 20px;
+	list-style-type: none;
+	position: relative;
+	top: 20px;
+}
+
+/* 
+.navBackground {
+	background-color: black;
+	position: sticky;
+}
+
+.navBackground img {
+	padding: 25px;
+}
+
+.navBackground {
+	color: black;
+	font-size: 10px;
+
+}
+
+
+.estiloLista {
+	font-size: 2rem;
+}
+
+h2.tabla__encabezado {
+	font-family: tahoma;
+	font-size: 4.5rem;
+	font-weight: bold;
+	font-style: italic;
+} */
+
+.parallax {
+
+	background-image: url("../assets/img/header.jpg");
+	height: 700px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 40px 100px;
+	margin-bottom: 5px;
+
+}
+
+
+.parallax h4 {
+
+	font-size: 4rem;
+	text-align: center;
+	background-color: rgb(68, 68, 68);
+	padding: 15px;
+
+}
+
+.parallax p {
+
+	font-size: 2.5rem;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 30px;
+
+}
+
+p {
+	font-size: 2rem;
+}
+
+div {
+	margin-top: 30px;
+}
+
+.estiloLista li {
+	display: inline;
+	padding: 10px;
+	margin: 5px;
+}
+
+ul {
+	list-style: none;
+	font-size: 0;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+li {
+	position: relative;
+	font-size: 1.5rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+ul ul {
+	position: relative;
+	display: none;
+}
+
+ul ul li {
+	display: block;
+	width: 200px;
+	padding: 10px;
+}
+
+ul ul li a {
+	color: purple;
+}
+
+ul li hover ul {
+	position: absolute;
+	display: block;
+	background-color: pink;
+
+}
+
+fieldset {
+	background-color: #CCC;
+	max-width: 500px;
+	padding: 30px;
+}
+
+.formulario {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+
+.footerBackground {
+	color: black;
+	font-size: 50px;
+
+}
+
+.footerBackground {
+	background-color: black;
+	position: relative;
+	left: 850px;
+}
+
+
+@media only screen and (min-width:1200px) {
+	.encabezado {
+		text-align: center;
+		color: blue;
+	}
+}
+
+@media only screen and (min-width:768px) {}
+
+
+@media only screen and (min-width:480px) {}
